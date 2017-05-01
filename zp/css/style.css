@@ -1,0 +1,27 @@
+body{background:black;padding: 6.5px;}
+.part1{float: left;margin: auto;width: 700px;height: 700px;background: url(../images/images.png) 0 0 no-repeat;}
+.left{float: left;/*border:1px solid red;*/width: auto;height: 700px;}
+.left div{width: 200px;}
+.mag{/*border:1px solid white;*/width: 100px;height: 100px;background: rgba(0,0,0,1);float: left;margin: 0;padding: 0;text-align: center;}
+.cnt{z-index: -1;width: 100px;height: 100px;margin: 0;font-size:70px;color:white;text-align: center;background:rgba(0,0,0,0.3) !important;
+}
+#animation1{
+-webkit-animation:bounceIn 2s .2s ease ;
+-moz-animation:bounceIn 2s .2s ease;}
+@-webkit-keyframes bounceIn{
+0%{opacity:0;
+-webkit-transform:scale(.3)}
+50%{opacity:1;
+-webkit-transform:scale(1.05)}
+70%{-webkit-transform:scale(.9)}
+100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes bounceIn{
+0%{opacity:0;
+-moz-transform:scale(.3)}
+50%{opacity:1;
+-moz-transform:scale(1.05)}
+70%{-moz-transform:scale(.9)}
+100%{-moz-transform:scale(1)}
+}
+
