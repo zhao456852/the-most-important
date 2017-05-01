@@ -1,0 +1,5 @@
+body{background:black;padding: 0.065rem;}
+.part1{float: left;margin: auto;width: 7rem;height: 7rem;background: url(../images/images.png) 0 0 no-repeat;}
+.mag{/*border:1px solid white;*/width: 1rem; height: 1rem; background: rgba(0,0,0,1);float: left;margin: 0;padding: 0;text-align: center;}
+.cnt{z-index: -1;width: 1rem;height: 1rem;margin: 0;font-size:0.7rem;color:white;text-align: center;background:rgba(0,0,0,0.3) !important;
+}
