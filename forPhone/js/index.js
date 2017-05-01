@@ -1,3 +1,3 @@
-$('div.mag').taphold(function(){
+$('div.mag').swiperight(function(){
 	$('div.mag').hide(2000);
 });
