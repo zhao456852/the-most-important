@@ -10,9 +10,17 @@
 	document.getElementById('htmlFt').style.fontSize=100/750*window.innerWidth + 'px';
 	$(window).resize(function(e){
 		document.getElementById('htmlFt').style.fontSize = 100/750*window.innerWidth + 'px';
-	});
-	document.querySelector('body').addEventListener('touchstart', function (ev) {
-    event.preventDefault();
+	});	
+	// document.querySelector('body').addEventListener('touchstart', function (e) {
+ //    event.preventDefault();
+ //    });	
+ //    var jinzhi=0;
+document.addEventListener("touchmove",function(e){
+if(jinzhi==0){
+e.preventDefault();
+e.stopPropagation();
+}
+},false);
 	</script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
