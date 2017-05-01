@@ -10,7 +10,9 @@
 	document.getElementById('htmlFt').style.fontSize=100/750*window.innerWidth + 'px';
 	$(window).resize(function(e){
 		document.getElementById('htmlFt').style.fontSize = 100/750*window.innerWidth + 'px';
-	})
+	});
+	document.querySelector('body').addEventListener('touchstart', function (ev) {
+    event.preventDefault();
 	</script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
