@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机归属地</title>
+</head>
+<body>
+	<span>手机号:</span>
+	<input type="text">
+	<input type="button" value="点击" onclick="x()">
+</body>
+<script type='text/javascript'>
+var xmlhttp;
+if (window.XMLHttpRequest) {
+	xmlhttp = new XMLHttpRequest();
+}else{
+	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
+}
+xmlhttp.open("GET","http://apicloud.mob.com/v1/mobile/address/query?key=1fe256faa5320&phone=18612441615",true);
+xmlhttp.onreadystatechange=function(){
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+		console.log(xmlHttp.responseText.length);
+	}
+}
+// console.log(xmlhttp)
+// 1fe256faa5320
+</script>
+</html>
